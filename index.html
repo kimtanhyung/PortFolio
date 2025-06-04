@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>포토폴리오</title>
+   <link rel="stylesheet" href="css/main.css">
+   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+   <script src="lib/jquery-3.7.1.min.js"></script>
+   <script>
+      $(function () {
+
+         $(window).on('mousemove', function (e) {
+            let x = e.pageX;
+            let y = e.pageY;
+
+            $('.cursor').css({
+               'top': y,
+               'left': x
+            });
+
+            //$('.item').마우스 올렸을 때 실행
+            //.cursor에게 클래스명 active 추가
+            //.벗어나면 ,cursor에게 클래스명 active제거
+            $('.item').on('mouseenter', function () {
+               $('.cursor').addClass('active');
+            });
+
+            $('.item').on('mouseleave', function () {
+               $('.cursor').removeClass('active');
+            });
+
+         });
+
+         $('.gnb > li').mouseenter(function () {
+            //$('.depth-02').slideDown();
+
+            //자식선택자 children()
+            //자식. 자손선택자 find()
+            $(this).find('.depth-02').stop().slideDown();
+
+
+         });//
+
+         $('.gnb > li').mouseleave(function () {
+            $(this).find('.depth-02').stop().slideUp()
+         });
+
+         $('.section-01 .image img').mouseenter(function () {
+            $(this).next('.text').addClass('active')
+         })
+
+         $('.section-01 .image img').mouseleave(function () {
+            $(this).next('.text').removeClass('active')
+         })
+
+
+
+
+      })//script end
+   </script>
+</head>
+
+<body>
+
+
+   <div id="wrap">
+      <header class="header">
+         <div class="inner">
+            <h1 class="logo">
+               <a href="#"><img src="img/logo/로고이미지.png" alt="로고"></a>
+            </h1><!-- .logo end -->
+
+            <nav class="nav">
+               <ul class="gnb">
+                  <li><a href="#">ABOUT</a></li>
+                  <li><a href="#">SKILL</a></li>
+                  <li><a href="#">PROJECT</a></li>
+                  <li><a href="#">DESIGN</a></li>
+                  <li><a href="#">CONTACT</a></li>
+               </ul><!-- .gnb end -->
+            </nav><!-- .nav end -->
+         </div><!-- .inner end -->
+
+         <div class="title">
+
+            <h1>안녕하세요!저의 이름은 <a class="sample">김탄형</a> 입니다<br />
+               <a class="type1">"디자인"은 '보여주는 것'을 넘어,</a> <br />사용자 <a class="type2">"경험을 중심"</a>으로<br />
+               <a class="type3">'직관적이고 감각적'</a>인 디자인 설계하고 구현하며<br />
+               <a class="type4">문제를 파악하여 해결</a>하는 웹 퍼블리셔 되고자 합니다.
+            </h1>
+         </div><!-- .title end -->
+      </header><!-- .header end -->
+
+      <div class="cursor">
+         <div class="inner">
+            <span>click</span>
+         </div><!-- inner end -->
+
+      </div><!-- .cursor end -->
+
+      <main class="main">
+
+         <section class="section section-01">
+            <div class="inner">
+               <div class="sec_title">
+                  <h2>SKILLS</h2>
+               </div><!-- .sec_title end -->
+
+               <div class="item">
+                  <div class="image">
+                     <img src="img/툴/html.png" alt="html">
+                     <div class="text">
+                        <p>html</p>
+                        <span>반응형 웹페이지 생성 및 웹 기본 구조 이해 마크업 가능합니다.</span>
+                     </div><!-- .text end -->
+                  </div><!-- image end -->
+
+                  <div class="image">
+                     <img src="img/툴/Layer 1.png" alt="css">
+                     <div class="text">
+                        <p>css</p>
+                        <span>웹 페이지의 구조 마크업 스타일링 할 수 있습니다.</span>
+                     </div><!-- .text end -->
+                  </div><!-- image end -->
+
+                  <div class="image">
+                     <img src="img/툴/자바 1.png" alt="JAVASCIPT">
+                     <div class="text">
+                        <p>JAVASCIPT</p>
+                        <span>버튼, 메뉴, 팝업 동적인 기능 구현할 수 있습니다.</span>
+                     </div><!-- .text end -->
+                  </div><!-- image end -->
+
+                  <div class="image">
+                     <img src="img/툴/피그마.png" alt="figma">
+                     <div class="text">
+                        <p>figma</p>
+                        <span>Web, App 인터페이스 디자인 및 스토리보드 제작 구현 가능합니다.</span>
+                     </div><!-- .text end -->
+                  </div><!-- image end -->
+
+                  <div class="image">
+                     <img src="img/툴/포토샵.png" alt="potoshop">
+                     <div class="text">
+                        <p>potoshop</p>
+                        <span>웹 디자인 제작 및 이미지 편집, 상세페이지 제작 가능합니다.</span>
+                     </div><!-- .text end -->
+                  </div><!-- image end -->
+
+                  <div class="image">
+                     <img src="img/툴/illust.png" alt="illustrator">
+                     <div class="text">
+                        <p>illustrator</p>
+                        <span>그래픽 디자인 및 상세페이지 제작 가능합니다.</span>
+                     </div><!-- .text end -->
+                  </div><!-- image end -->
+
+                  <div class="image">
+                     <img src="img/툴/파워포인트.png" alt="powerpoint">
+                     <div class="text">
+                        <p>파워포인트</p>
+                        <span>PPT 제작 및 기본 문서 작성 가능합니다.</span>
+                     </div><!-- .text end -->
+                  </div><!-- image end -->
+
+
+               </div><!-- .item end -->
+
+
+               <div class="scroll">
+                  <div class="item">
+                     <div class="item_wrap">
+
+                        <div class="image">
+                           <a href="#section-02"><img src="img/스크롤/아래화살표.png" alt="arrow"></a>
+                        </div><!-- .image end -->
+
+                        <div class="bg">
+                           <a href="#section-02">
+                              <img src="img/스크롤/scroll_txt_bg.png" alt="스크롤">
+                           </a>
+                        </div><!-- .bg -->
+
+                     </div><!-- .item_wrap end -->
+                  </div><!-- .item end -->
+               </div><!-- .scroll -->
+
+
+
+            </div><!-- .inner end -->
+         </section><!-- .section-01 end -->
+
+         <section class="section section-02" id="section-02">
+
+            <div class="inner">
+               <div class="image">
+                  <img src="img/KakaoTalk_20250528_172216469.png" alt="이미지 사진">
+
+                  <div class="direction">
+                     <div class="education">
+                        <div class="inner">
+                           <div class="text">
+                              <h2>EDUCATION</h2>
+                              <p>부산경상대학교 멀티미디어 전공<br /> </p>
+                              <span>2015.03 ~ 2017.02 졸업<span>
+
+                           </div><!-- .text -->
+                        </div><!-- .inner -->
+                     </div><!-- .education end -->
+
+                     <div class="text-01">
+                        <h2>EXPERIENCE</h2>
+                        <p>부산경상대학교 산학연계 인턴</p>
+                        <span>PPT 제작 및 웹 홈페이지 제작<br /></span>
+                        <strong>2015.12 ~ 2016. 02(3개월)</strong>
+                     </div><!-- .text eind -->
+
+
+                     <div class="text-02">
+                        <p>(주)픽스 산학연계 인턴</p>
+                        <span>웹 홈페이지 제작 및 코딩<br /></span>
+                        <strong>2016.12 ~ 2017.12(3주)</strong>
+                     </div><!-- .text eind -->
+                  </div><!-- .direction end -->
+
+                  <div class="LICENSE">
+                     <div class="inner">
+                        <div class="text">
+                           <h2>LICENSE</h2>
+                           <p>GTQ그래픽기술자격 2급</p>
+                           <span>2017.01.13</span>
+                        </div><!-- .text end -->
+
+                        <div class="text">
+                           <p>정보기술자격(ITQ)한글파워포인트A</p>
+                           <span>2016.12.01</span>
+                        </div><!-- .text end -->
+
+                        <div class="text">
+                           <p>정보기술자격(ITQ)아래한글 A등급</p>
+                           <span>2016.10.27</span>
+                        </div><!-- .text end -->
+
+                        <div class="text">
+                           <p>e-test 엑셀</p>
+                           <span>2015.12.07</span>
+                        </div><!-- .text end -->
+
+                     </div><!-- .inner -->
+                  </div><!-- .LICENSE -->
+
+                  <div class="AWARD">
+                     <div class="inner">
+                        <div class="text">
+                           <h2>AWARD</h2>
+                           <div class="text">
+                              <p>부산 경상대학교(동아리)</p>
+                              <span>부산창업페스티벌 참가</span>
+                              <span>달고나 제품 소개 PPT 제작</span>
+                              <span>2015.12 ~ 2016.02(3개월)</span>
+
+                              <div class="text">
+                                 <p>부산섬유패션연합회 공모전 참가</p>
+                                 <span>나비패턴디자인 공모전 입선</span>
+                                 <span>2016.11</span>
+
+                              </div><!-- .text end -->
+                           </div><!-- .inner end -->
+                        </div><!-- .AWARD end -->
+
+         </section><!-- .section-02 end -->
+
+         <section class="section section-03">
+
+
+            <div class="section_title">
+               <h2>PROJECT</h2>
+            </div><!-- .section_title -->
+            <div class="inner">
+               <div class="image">
+                  <img src="img/프로젝트/코카콜라/목업코카콜라프로젝트.png" alt="코카콜라">
+               </div><!-- .image end -->
+               <div class="text">
+                  <p>COCACOLA</p>
+                  <span>코카콜라 홈페이지 리뉴얼 입니다.</span>
+                  <div class="text-04">
+                     <h3>TYPE</h3>
+                     <p>Repon Sive Wep</p>
+                  </div><!-- .text -04 -->
+
+                  <div class="text-05">
+                     <h3>PAGE</h3>
+                     <p>Main</p>
+                  </div><!-- .text -05 -->
+
+                  <div class="text-06">
+                     <h3>PROGRAM</h3>
+                     <p>VSCode, potoshop</p>
+                  </div><!-- .text -06 -->
+
+                  <div class="text-06">
+                     <h3>TOOL</h3>
+                     <p>HTML, CSS, JS</p>
+                  </div><!-- .text -06 -->
+
+                  <div class="text-07">
+                     <h3>PART</h3>
+                     <p>기획, 디자인, 퍼블리싱100%</p>
+                  </div><!-- .text -07 -->
+
+                  <div class="divce">
+                     <div class="button-04">
+                        <div class="btn">
+                           <a href="img/코카콜라프로젝트.pdf" target="_blank">
+                              <p>PROCESS</p>
+                           </a>
+                        </div><!-- .btn end -->
+                     </div><!-- .button end -->
+
+                     <div class="button-04">
+                        <div class="btn-02">
+                           <a href="https://kimtanhyung.github.io/cocolasite/" target="_blank">
+                              <p>WEPSITE</p>
+                           </a>
+                        </div><!-- .btn end -->
+                     </div><!-- .button end -->
+                  </div>
+               </div><!-- .text end -->
+
+            </div><!-- .inner end -->
+
+
+         </section><!-- .section-03 end -->
+
+         <section class="section section-04">
+
+            <div class="inner">
+               <div class="image">
+                  <img src="img/프로젝트/bmw/BMW목업프로젝트.png" alt="bmw">
+               </div><!-- .image end -->
+               <div class="text">
+                  <p>BMW</p>
+                  <span>BMW 홈페이지 리뉴얼 입니다.</span>
+                  <div class="text-04">
+                     <h3>TYPE</h3>
+                     <p>Repon Sive Wep</p>
+                  </div><!-- .text -04 -->
+
+                  <div class="text-05">
+                     <h3>PAGE</h3>
+                     <p>Main</p>
+                  </div><!-- .text -05 -->
+
+                  <div class="text-06">
+                     <h3>PROGRAM</h3>
+                     <p>VSCode, FIGMA</p>
+                  </div><!-- .text -06 -->
+
+                  <div class="text-06">
+                     <h3>TOOL</h3>
+                     <p>HTML, CSS, JS</p>
+                  </div><!-- .text -06 -->
+
+                  <div class="text-07">
+                     <h3>PART</h3>
+                     <p>기획, 디자인, 퍼블리싱100%</p>
+                  </div><!-- .text -07 -->
+
+                  <div class="divce">
+                     <div class="button-04">
+                        <div class="btn">
+                           <a href="img/홈페이지리뉴얼-BMW.pdf" target="_blank">
+                              <p>PROCESS</p>
+                           </a>
+                        </div><!-- .btn end -->
+                     </div><!-- .button end -->
+
+                     <div class="button-04">
+                        <div class="btn-02">
+                           <a href="https://kimtanhyung.github.io/kimtnahyung/" target="_blank">
+                              <p>WEPSITE</p>
+                           </a>
+                        </div><!-- .btn end -->
+                     </div><!-- .button end -->
+                  </div>
+               </div><!-- .text end -->
+
+            </div><!-- .inner end -->
+
+
+         </section><!-- .section-04 end -->
+
+         <section class="section section-04">
+
+            <div class="inner">
+               <div class="image">
+                  <img src="img/프로젝트/로보토리에듀모작/로보토리에듀모작목업.png" alt="로보토리에듀모작목업">
+               </div><!-- .image end -->
+               <div class="text">
+                  <p>로보토리에듀모작</p>
+                  <span>로보토리에듀모작 입니다.</span>
+                  <div class="text-04">
+                     <h3>TYPE</h3>
+                     <p>Repon Sive Wep</p>
+                  </div><!-- .text -04 -->
+
+                  <div class="text-05">
+                     <h3>PAGE</h3>
+                     <p>Main</p>
+                  </div><!-- .text -05 -->
+
+                  <div class="text-06">
+                     <h3>PROGRAM</h3>
+                     <p>VSCode</p>
+                  </div><!-- .text -06 -->
+
+                  <div class="text-06">
+                     <h3>TOOL</h3>
+                     <p>HTML, CSS, JS</p>
+                  </div><!-- .text -06 -->
+
+                  <div class="text-07">
+                     <h3>PART</h3>
+                     <p>퍼블리싱100%</p>
+                  </div><!-- .text -07 -->
+
+                  <div class="divce">
+                     <div class="button-04">
+                        <div class="btn">
+                           <a href="https://kimtanhyung.github.io/hompage/" target="_blank">
+                              <p>WEPSITE</p>
+                           </a>
+                        </div><!-- .btn end -->
+                     </div><!-- .button end -->
+
+                  </div><!-- .divce end -->
+               </div><!-- .text end -->
+
+            </div><!-- .inner end -->
+
+
+         </section><!-- .section-04 end -->
+
+         <section class="section section-04">
+
+            <div class="inner">
+               <div class="image">
+                  <img src="img/프로젝트/커플이야리뉴얼/커플이야.png" alt="커플이야">
+               </div><!-- .image end -->
+               <div class="text">
+                  <p>커플이야리뉴얼</p>
+                  <span>커플이야 모바일 리뉴얼 입니다.</span>
+                  <div class="text-04">
+                     <h3>TYPE</h3>
+                     <p>Repon Sive Wep</p>
+                  </div><!-- .text -04 -->
+
+                  <div class="text-05">
+                     <h3>PAGE</h3>
+                     <p>Main</p>
+                  </div><!-- .text -05 -->
+
+                  <div class="text-06">
+                     <h3>PROGRAM</h3>
+                     <p>FIGMA</p>
+                  </div><!-- .text -06 -->
+
+                  <div class="text-06">
+                     <h3>TOOL</h3>
+                     <p>FIGMA, PROTOTYPE</p>
+                  </div><!-- .text -06 -->
+
+                  <div class="text-07">
+                     <h3>PART</h3>
+                     <p>기획, 디자인</p>
+                  </div><!-- .text -07 -->
+
+                  <div class="divce">
+                     <div class="button-04">
+                        <div class="btn">
+                           <a href="img/김탄형_스마트문화앱UI디자인.pdf" target="_blank">
+                              <p>PROCESS</p>
+                           </a>
+                        </div><!-- .btn end -->
+                     </div><!-- .button end -->
+
+                     <div class="button-04">
+                        <div class="btn-02">
+                           <a href="https://www.figma.com/design/N3VytaXKlZNpw81tFe1IbR/Untitled--Copy-?node-id=0-1&p=f&t=maeENikb7UOHhm0W-0" target="_blank">
+                              <p>WEPSITE</p>
+                           </a>
+                        </div><!-- .btn end -->
+                     </div><!-- .button end -->
+                  </div>
+               </div><!-- .text end -->
+
+            </div><!-- .inner end -->
+
+
+         </section><!-- .section-04 end -->
+
+         <section class="section section-05">
+            <div class="section_title">
+               <h2>POTOSHOP & ILLUSTRATOR DESIGN</h2>
+            </div><!-- .section_title -->
+            <div class="inner">
+               <div class="item">
+                  <div class="image">
+                     <a href="#"><img src="img/potoshop/김탄형-패턴만들기.jpg" alt="나비패턴만들기"></a>
+                  </div><!-- .image end -->
+
+                  <div class="image">
+                     <a href="#"><img src="img/potoshop/배너만들기.jpg" alt="배너만들기"></a>
+                     <a href="#"><img src="img/potoshop/Thanks.jpg" alt="Thanks"></a>
+                  </div><!-- .image end -->
+
+                  <div class="image">
+                     <a href="#"><img src="img/potoshop/애니메이션.gif" alt="애니메이션"></a>
+                  </div><!-- .image end -->
+
+                  <div class="image">
+                     <a href="#"><img src="img/potoshop/부산국제영화제포스터만들기.jpg" alt="부산국제영화제"></a>
+                  </div><!-- .image end -->
+
+               </div><!-- .item end -->
+
+               <div class="illustrator">
+                  <div class="item">
+                     <div class="image">
+                        <a href="#"><img src="img/일러스트/연습.jpg" alt="연습"></a>
+                     </div><!-- .image end -->
+
+                     <div class="image">
+                        <a href="#"><img src="img/일러스트/예제파일.jpg" alt="예제파일"></a>
+                     </div><!-- .image end -->
+
+                     <div class="image">
+                        <a href="#"><img src="img/일러스트/일러스트.jpg" alt="일러스트"></a>
+                     </div><!-- .image end -->
+                  </div>
+
+               </div><!-- .illustrator -->
+
+
+
+            </div><!-- .inner end -->
+
+
+         </section><!-- .section-05 end -->
+
+
+         <section class="section section-06">
+            <div class="inner">
+               <div class="pdf">
+                  <ul>
+                     <li>
+                        <a href="img/김탄형입사지원서.pdf" target="_blank">
+                           <p>입사지원서 PDF</p>
+                        </a>
+                     </li>
+
+                     <li>
+                        <a href="img/김탄형입사지원서.pdf" target="_blank">
+                           <p>이력서 PDF</p>
+                        </a>
+                     </li>
+
+                  </ul>
+
+
+
+               </div><!-- .pdf -->
+            </div><!-- .inner end -->
+         </section><!-- .section-06 end -->
+      </main>
+
+      <div class="footer">
+         <div class="inner">
+            <div class="title">
+               <p>CONTACT</p>
+            </div><!-- .title end -->
+
+            <div class="CONTACT">
+               <div class="tel">
+                  <p>📞 010-7745-3847</p>
+               </div><!-- .tel end -->
+
+              <div class="tel">
+                  <p>📞 010-9346-2892</p>
+               </div><!-- .tel end -->
+
+
+               <div class="email">
+                  <p>ktha586@naver.com</p>
+               </div><!-- .tel end -->
+            </div><!-- .CONTACT end -->
+
+            <div class="copy">
+               <p>© 2025.TanHyeong.All Rights Reserved.</p>
+            </div><!-- .tel end -->
+
+
+
+
+         </div><!-- .inner end -->
+
+      </div><!-- .footer end -->
+
+
+
+
+
+
+
+
+
+   </div><!-- #wrap end -->
+</body>
+
+</html>
