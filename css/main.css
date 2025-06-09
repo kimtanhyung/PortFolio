@@ -227,8 +227,7 @@ body {
 }
 
 .section-01 .inner .item {
-    max-width: 1280px;
-    width: calc(100% - 20px);
+
     display: flex;
     justify-content: space-between;
     gap: 100px;
@@ -263,7 +262,7 @@ body {
 
 
 
-.section-01 .scroll .item {
+.section-01 .scroll {
     width: 160px;
     height: 160px;
     margin: 0 auto;
@@ -735,6 +734,7 @@ body {
 
 
 }
+
 a:hover {
     color: #fff;
 }
@@ -814,12 +814,14 @@ a:hover {
     margin-top: 160px;
 }
 
-.section-06 .inner .pdf{
-    color: blue;
+.section-06 .inner .pdf {
+     
+    color: #333333;
 }
 
 
 .section-06 .inner ul {
+
     display: block;
     display: flex;
     justify-content: space-between;
@@ -827,6 +829,7 @@ a:hover {
 }
 
 .section-06 .inner ul li {
+    
     width: 50%;
     height: 5rem;
     font-size: 20px;
@@ -835,11 +838,11 @@ a:hover {
     align-content: center;
 }
 
-.section-06 .inner ul li:hover{
+.section-06 .inner ul li:hover {
+    font-display: block;
     background-color: #f76363;
+    color: #fff;
 }
-
-
 
 
 
