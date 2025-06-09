@@ -744,9 +744,14 @@ a:hover {
 }
 
 .section-05 .section_title h2 {
-    margin-top: 160px;
-    text-align: center;
-    font-size: 40px;
+   font-family: Oswald;
+    font-weight: 600;
+    font-size: 60px;
+    margin-top: 400px;
+    margin-bottom: 160px;
+    margin-left: 16.5%;
+    letter-spacing: 10px;
+
 }
 
 .section-05 .inner {
