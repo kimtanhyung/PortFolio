@@ -7,6 +7,10 @@
    <title>포트폴리오</title>
    <link rel="stylesheet" href="css/main.css">
    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
    <script src="lib/jquery-3.7.1.min.js"></script>
    <script>
       $(function () {
@@ -23,11 +27,11 @@
             //$('.item').마우스 올렸을 때 실행
             //.cursor에게 클래스명 active 추가
             //.벗어나면 ,cursor에게 클래스명 active제거
-            $('.item').on('mouseenter', function () {
+            $('.scroll').on('mouseenter', function () {
                $('.cursor').addClass('active');
             });
 
-            $('.item').on('mouseleave', function () {
+            $('.scroll').on('mouseleave', function () {
                $('.cursor').removeClass('active');
             });
 
@@ -69,16 +73,12 @@
       <header class="header">
          <div class="inner">
             <h1 class="logo">
-               <a href="#"><img src="img/logo/로고이미지.png" alt="로고"></a>
+               <a href="#"><img src="img/logo/logo.png" alt="로고"></a>
             </h1><!-- .logo end -->
 
             <nav class="nav">
                <ul class="gnb">
-                  <li><a href="#">ABOUT</a></li>
-                  <li><a href="#">SKILL</a></li>
-                  <li><a href="#">PROJECT</a></li>
-                  <li><a href="#">DESIGN</a></li>
-                  <li><a href="#">CONTACT</a></li>
+
                </ul><!-- .gnb end -->
             </nav><!-- .nav end -->
          </div><!-- .inner end -->
@@ -106,6 +106,7 @@
             <div class="inner">
                <div class="sec_title">
                   <h2>SKILLS</h2>
+                  <p>마우스를 올려보세요</p>
                </div><!-- .sec_title end -->
 
                <div class="item">
@@ -208,7 +209,7 @@
                            </div><!-- .text -->
 
                            <div class="text">
-                              <p>[디지털디자인]트렌디한 UI/UX반응형 웹 제작을 위한 웹퍼블리셔(디자인&코딩)프론트엔드A</p>
+                              <p>[디지털디자인]트렌디한 UI/UX반응형 웹 제작을 위한 <br />웹퍼블리셔(디자인&코딩)프론트엔드A</p>
                               <span>그린컴퓨터 아카데미 과정 이수</span>
                               <span>2025.01 ~ 2025.06</span>
                            </div><!-- .text -->
@@ -223,7 +224,6 @@
                         <span>PPT 제작 및 웹 홈페이지 제작<br /></span>
                         <strong>2015.12 ~ 2016. 02(3개월)</strong>
                      </div><!-- .text eind -->
-
 
                      <div class="text-02">
                         <p>(주)픽스 산학연계 인턴</p>
@@ -254,28 +254,29 @@
                            <p>e-test 엑셀</p>
                            <span>2015.12.07</span>
                         </div><!-- .text end -->
-
                      </div><!-- .inner -->
-                  </div><!-- .LICENSE -->
 
-                  <div class="AWARD">
-                     <div class="inner">
-                        <div class="text">
-                           <h2>AWARD</h2>
+                     <div class="AWARD">
+                        <div class="inner">
                            <div class="text">
-                              <p>부산 경상대학교(동아리)</p>
-                              <span>부산창업페스티벌 참가</span>
-                              <span>달고나 제품 소개 PPT 제작</span>
-                              <span>2015.12 ~ 2016.02(3개월)</span>
-
+                              <h2>AWARD</h2>
                               <div class="text">
-                                 <p>부산섬유패션연합회 공모전 참가</p>
-                                 <span>나비패턴디자인 공모전 입선</span>
-                                 <span>2016.11</span>
+                                 <p>부산 경상대학교(동아리)</p>
+                                 <span>부산창업페스티벌 참가</span>
+                                 <span>달고나 제품 소개 PPT 제작</span>
+                                 <span>2015.12 ~ 2016.02(3개월)</span>
 
-                              </div><!-- .text end -->
+                                 <div class="text">
+                                    <p>부산섬유패션연합회 공모전 참가</p>
+                                    <span>나비패턴디자인 공모전 입선</span>
+                                    <span>2016.11</span>
+
+                                 </div><!-- .text end -->
+
+                              </div><!-- .AWARD end -->
                            </div><!-- .inner end -->
-                        </div><!-- .AWARD end -->
+                        </div><!-- .LICENSE -->
+
 
          </section><!-- .section-02 end -->
 
@@ -283,38 +284,38 @@
 
 
             <div class="section_title">
-               <h2>PROJECT</h2>
+               <h2>WEB/APP PROJECT</h2>
             </div><!-- .section_title -->
             <div class="inner">
                <div class="image">
                   <img src="img/프로젝트/코카콜라/목업코카콜라프로젝트.png" alt="코카콜라">
                </div><!-- .image end -->
                <div class="text">
-                  <p>COCACOLA</p>
+                  <strong>COCACOLA</strong>
                   <span>코카콜라 홈페이지 리뉴얼 입니다.</span>
                   <div class="text-04">
-                     <h3>TYPE</h3>
-                     <p>Repon Sive Wep</p>
+                     <p>TYPE</p>
+                     <strong>Repon Sive Wep</strong>
                   </div><!-- .text -04 -->
 
                   <div class="text-05">
-                     <h3>PAGE</h3>
-                     <p>Main</p>
+                     <p>PAGE</p>
+                     <strong>Main</strong>
                   </div><!-- .text -05 -->
 
                   <div class="text-06">
-                     <h3>PROGRAM</h3>
-                     <p>VSCode, potoshop</p>
+                     <p>PROGRAM</p>
+                     <strong>VSCode, potoshop</strong>
                   </div><!-- .text -06 -->
 
                   <div class="text-06">
-                     <h3>TOOL</h3>
-                     <p>HTML, CSS, JS</p>
+                     <p>TOOL</p>
+                     <strong>HTML, CSS, JS</strong>
                   </div><!-- .text -06 -->
 
                   <div class="text-07">
-                     <h3>PART</h3>
-                     <p>기획, 디자인, 퍼블리싱100%</p>
+                     <p>PART</p>
+                     <strong>기획, 디자인, 퍼블리싱100%</strong>
                   </div><!-- .text -07 -->
 
                   <div class="divce">
@@ -348,31 +349,31 @@
                   <img src="img/프로젝트/bmw/BMW목업프로젝트.png" alt="bmw">
                </div><!-- .image end -->
                <div class="text">
-                  <p>BMW</p>
+                  <strong>BMW</strong>
                   <span>BMW 홈페이지 리뉴얼 입니다.</span>
                   <div class="text-04">
-                     <h3>TYPE</h3>
-                     <p>Repon Sive Wep</p>
+                     <p>TYPE</p>
+                     <strong>Repon Sive Wep</strong>
                   </div><!-- .text -04 -->
 
                   <div class="text-05">
-                     <h3>PAGE</h3>
-                     <p>Main</p>
+                     <p>PAGE</p>
+                     <strong>Main</strong>
                   </div><!-- .text -05 -->
 
                   <div class="text-06">
-                     <h3>PROGRAM</h3>
-                     <p>VSCode, FIGMA</p>
+                     <p>PROGRAM</p>
+                     <strong>VSCode, FIGMA</strong>
                   </div><!-- .text -06 -->
 
                   <div class="text-06">
-                     <h3>TOOL</h3>
-                     <p>HTML, CSS, JS</p>
+                     <p>TOOL</p>
+                     <strong>HTML, CSS, JS</strong>
                   </div><!-- .text -06 -->
 
                   <div class="text-07">
-                     <h3>PART</h3>
-                     <p>기획, 디자인, 퍼블리싱100%</p>
+                     <p>PART</p>
+                     <strong>기획, 디자인, 퍼블리싱100%</strong>
                   </div><!-- .text -07 -->
 
                   <div class="divce">
@@ -406,31 +407,31 @@
                   <img src="img/프로젝트/로보토리에듀모작/로보토리에듀모작목업.png" alt="로보토리에듀모작목업">
                </div><!-- .image end -->
                <div class="text">
-                  <p>로보토리에듀모작</p>
+                  <strong>로보토리에듀모작</strong>
                   <span>로보토리에듀모작 입니다.</span>
                   <div class="text-04">
-                     <h3>TYPE</h3>
-                     <p>Repon Sive Wep</p>
+                     <p>TYPE</p>
+                     <strong>Repon Sive Wep</strong>
                   </div><!-- .text -04 -->
 
                   <div class="text-05">
-                     <h3>PAGE</h3>
-                     <p>Main</p>
+                     <p>PAGE</p>
+                     <strong>Main</strong>
                   </div><!-- .text -05 -->
 
                   <div class="text-06">
-                     <h3>PROGRAM</h3>
-                     <p>VSCode</p>
+                     <p>PROGRAM</p>
+                     <strong>VSCode</strong>
                   </div><!-- .text -06 -->
 
                   <div class="text-06">
-                     <h3>TOOL</h3>
-                     <p>HTML, CSS, JS</p>
+                     <p>TOOL</p>
+                     <strong>HTML, CSS, JS</strong>
                   </div><!-- .text -06 -->
 
                   <div class="text-07">
-                     <h3>PART</h3>
-                     <p>퍼블리싱100%</p>
+                     <p>PART</p>
+                     <strong>퍼블리싱100%</strong>
                   </div><!-- .text -07 -->
 
                   <div class="divce">
@@ -457,31 +458,31 @@
                   <img src="img/프로젝트/커플이야리뉴얼/커플이야.png" alt="커플이야">
                </div><!-- .image end -->
                <div class="text">
-                  <p>커플이야리뉴얼</p>
+                  <strong>커플이야리뉴얼</strong>
                   <span>커플이야 모바일 리뉴얼 입니다.</span>
                   <div class="text-04">
-                     <h3>TYPE</h3>
-                     <p>Repon Sive Wep</p>
+                     <p>TYPE</p>
+                     <strong>Repon Sive MOBILE APP</strong>
                   </div><!-- .text -04 -->
 
                   <div class="text-05">
-                     <h3>PAGE</h3>
-                     <p>Main</p>
+                     <p>PAGE</p>
+                     <strong>Main</strong>
                   </div><!-- .text -05 -->
 
                   <div class="text-06">
-                     <h3>PROGRAM</h3>
-                     <p>FIGMA</p>
+                     <p>PROGRAM</p>
+                     <strong>FIGMA</strong>
                   </div><!-- .text -06 -->
 
                   <div class="text-06">
-                     <h3>TOOL</h3>
-                     <p>FIGMA, PROTOTYPE</p>
+                     <p>TOOL</p>
+                     <strong>FIGMA, PROTOTYPE</strong>
                   </div><!-- .text -06 -->
 
                   <div class="text-07">
-                     <h3>PART</h3>
-                     <p>기획, 디자인</p>
+                     <p>PART</p>
+                     <strong>기획, 디자인</strong>
                   </div><!-- .text -07 -->
 
                   <div class="divce">
@@ -495,8 +496,9 @@
 
                      <div class="button-04">
                         <div class="btn-02">
-                           <a href="https://www.figma.com/design/N3VytaXKlZNpw81tFe1IbR/Untitled--Copy-?node-id=0-1&p=f&t=maeENikb7UOHhm0W-0" target="_blank">
-                              <p>WEPSITE</p>
+                           <a href="https://www.figma.com/proto/8pcKfCcOfhiq7qXT4z2Lrc/Untitled--Copy-?node-id=2017-2704&p=f&t=fJjQuRXvZJp39P1e-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1"
+                              target="_blank">
+                              <p>WEPSITE</p> 
                            </a>
                         </div><!-- .btn end -->
                      </div><!-- .button end -->
@@ -519,8 +521,7 @@
                   </div><!-- .image end -->
 
                   <div class="image">
-                     <a href="#"><img src="img/potoshop/배너만들기.jpg" alt="배너만들기"></a>
-                     <a href="#"><img src="img/potoshop/Thanks.jpg" alt="Thanks"></a>
+                     <a href="#"><img src="img/potoshop/상세페이지.png" alt="상세페이지"></a>
                   </div><!-- .image end -->
 
                   <div class="image">
@@ -569,8 +570,8 @@
                      </li>
 
                      <li>
-                        <a href="img/김탄형입사지원서.pdf" target="_blank">
-                           <p>이력서 PDF</p>
+                        <a href="" target="_blank">
+                           <p>PPT</p>
                         </a>
                      </li>
 
@@ -594,9 +595,6 @@
                   <p>📞 010-7745-3847</p>
                </div><!-- .tel end -->
 
-              <div class="tel">
-                  <p>📞 010-9346-2892</p>
-               </div><!-- .tel end -->
 
 
                <div class="email">
