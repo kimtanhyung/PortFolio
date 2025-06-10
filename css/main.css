@@ -518,8 +518,8 @@ body {
     object-fit: cover;
 }
 
-.section-03 .inner .text strong {
-    font-size: 30px;
+.section-03 .inner .text p {
+    font-size: 16px;
 }
 
 .section-03 .inner .text span {
@@ -534,13 +534,13 @@ body {
 }
 
 .section-03 .inner .text-04 p {
-    margin-top: 34px;
-    font-size: 19px;
+    margin-top: 30px;
+    font-size: 15px;
 }
 
 .section-03 .inner .text-04 strong {
-    font-size: 15px;
-    margin-top: 37px;
+    font-size: 19px;
+    margin-top: 27px;
 }
 
 
@@ -550,13 +550,13 @@ body {
 }
 
 .section-03 .inner .text-05 p {
-    margin-top: 24px;
-    font-size: 19px;
+    margin-top: 34px;
+    font-size: 15px;
 }
 
 .section-03 .inner .text-05 strong {
-    font-size: 15px;
-    margin-top: 27px;
+    font-size: 19px;
+    margin-top: 30px;
 }
 
 .section-03 .inner .text-06 {
@@ -565,13 +565,13 @@ body {
 }
 
 .section-03 .inner .text-06 p {
-    margin-top: 24px;
-    font-size: 19px;
+    margin-top: 32px;
+    font-size: 15px;
 }
 
 .section-03 .inner .text-06 strong {
-    font-size: 15px;
-    margin-top: 27px;
+    font-size: 19px;
+    margin-top: 28px;
 }
 
 .section-03 .inner .text-07 {
@@ -580,13 +580,13 @@ body {
 }
 
 .section-03 .inner .text-07 p {
-    margin-top: 24px;
-    font-size: 19px;
+    margin-top: 34px;
+    font-size: 15px;
 }
 
 .section-03 .inner .text-07 strong {
-    font-size: 15px;
-    margin-top: 27px;
+    font-size: 19px;
+    margin-top: 30px;
 }
 
 .section-03 .inner .divce {
@@ -609,6 +609,7 @@ body {
 
 .section-03 .inner .divce .button-04:hover {
     background-color: #f76363;
+    color: #fff;
 
 
 }
@@ -656,13 +657,13 @@ body {
 }
 
 .section-04 .inner .text-04 p {
-    margin-top: 34px;
-    font-size: 19px;
+    margin-top: 30px;
+    font-size: 15px;
 }
 
 .section-04 .inner .text-04 strong {
-    font-size: 15px;
-    margin-top: 37px;
+    font-size: 19px;
+    margin-top: 27px;
 }
 
 
@@ -672,13 +673,13 @@ body {
 }
 
 .section-04 .inner .text-05 p {
-    margin-top: 24px;
-    font-size: 19px;
+    margin-top: 34px;
+    font-size: 15px;
 }
 
 .section-04 .inner .text-05 strong {
-    font-size: 15px;
-    margin-top: 27px;
+    font-size: 19px;
+    margin-top: 30px;
 }
 
 .section-04 .inner .text-06 {
@@ -687,13 +688,13 @@ body {
 }
 
 .section-04 .inner .text-06 p {
-    margin-top: 24px;
-    font-size: 19px;
+    margin-top: 32px;
+    font-size: 15px;
 }
 
 .section-04 .inner .text-06 strong {
-    font-size: 15px;
-    margin-top: 27px;
+    font-size: 19px;
+    margin-top: 28px;
 }
 
 .section-04 .inner .text-07 {
@@ -702,13 +703,13 @@ body {
 }
 
 .section-04 .inner .text-07 p {
-    margin-top: 24px;
-    font-size: 19px;
+    margin-top: 34px;
+    font-size: 15px;
 }
 
 .section-04 .inner .text-07 strong {
-    font-size: 15px;
-    margin-top: 27px;
+    font-size: 19px;
+    margin-top: 30px;
 }
 
 .section-04 .inner .divce {
@@ -731,6 +732,7 @@ body {
 
 .section-04 .inner .divce .button-04:hover {
     background-color: #f76363;
+    color: #fff;
 
 
 }
