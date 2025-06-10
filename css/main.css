@@ -518,8 +518,8 @@ body {
     object-fit: cover;
 }
 
-.section-03 .inner .text p {
-    font-size: 16px;
+.section-03 .inner .text strong {
+    font-size: 30px;
 }
 
 .section-03 .inner .text span {
