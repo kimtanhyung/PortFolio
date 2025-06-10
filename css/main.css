@@ -608,6 +608,7 @@ body {
 }
 
 .section-03 .inner .divce .button-04:hover {
+    display: block;
     background-color: #f76363;
     color: #fff;
 
@@ -731,6 +732,7 @@ body {
 }
 
 .section-04 .inner .divce .button-04:hover {
+    display: block;
     background-color: #f76363;
     color: #fff;
 
